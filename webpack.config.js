@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: { //входная точка сборки 
+    entry: { 
         app: './src/index.js'
     },
     module: {
@@ -48,7 +48,7 @@ module.exports = {
           }
         ]
       },
-    output: { //собранная сборка
+    output: { 
         filename: '[name].js',
         path: path.resolve(__dirname,'dist'),
         publicPath: '/dist/'
@@ -58,7 +58,7 @@ module.exports = {
           filename: '[name].css',
         }),
       ],
-    devServer: { //настройки для devServer
+    devServer: { 
         overlay: true
     }
 }
